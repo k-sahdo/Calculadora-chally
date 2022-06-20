@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>CALCULADORA</title>
+</head>
+<body id="corpo">
+    <main>
+        <section class="topo">
+            <ul>
+                <img src="./arquivos/icon.png" style="width:80px;">
+                <li>
+                    <span id="fechadura" class="material-icons">
+                        lock_open
+                        </span>
+                </li>
+            </ul>
+            <div id="localvisor">
+                <p id="acalcular">0</p>
+                <p id="visor">0</p>
+            </div>
+        </section>
+        <section id="localbotao" class="botao">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button id="deleta">DEL</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btnopera" id="soma" >+</button> 
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btnopera" id="subtrai" >-</button>
+            <button class="btnopera" id="ponto">.</button>
+            <button class="btn">0</button>
+            <button class="btnopera" id="divide" >/</button>
+            <button class="btnopera" id="multiplica" >*</button>
+            <button id="reset">RESET</button>
+            <button id="igual">=</button>
+        </section>
+    </main>
+    <script type="text/javascript" src="./script/script.js"></script>
+</body>
+</html>

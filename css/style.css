@@ -1,0 +1,55 @@
+*{box-sizing: border-box; font-size: 100%; padding: 0; margin: 0;font-family: 'Red Hat Mono', monospace;}
+ul, li {list-style: none;}
+
+
+body {display:flex; background-color:  #1a1a1a;}
+
+main{ display: flex; flex-direction: column; margin: 5rem auto; align-items: center;}
+
+@media (max-width: 400px){
+    main {margin: 1rem auto;}
+}
+/* ---------- select ------- */
+
+.topo ul li {display: flex; align-items: center;}
+
+.topo ul li button {height: 2rem; width: 2rem; cursor: pointer; box-shadow: 0 4px #9A8C98; border-radius: 50%; border:none; background-color: #F2E9E4; font-size: 1rem; opacity: 0.9; margin: 0rem 0.1rem;}
+
+.topo ul li button:hover {opacity: 1.5; }
+
+.topo ul li button:active {transform: translateY(2px); box-shadow: 0 2px #9A8C98; }
+
+/* ---------- tela ------- */
+
+.topo ul {line-height: 3rem; display: flex; justify-content: space-between; margin: 0 1rem; align-items: center;}
+
+.topo {width: 400px; color: white; }
+
+.topo h1 {font-size: 1.5rem;}
+
+.topo div {display: flex; flex-direction: column; background-color: #000000;  font-size: 2.5rem; padding: 0 1rem; border-radius: 1rem; }
+
+.topo div #visor {text-align: right; line-height: 4rem;}
+
+.topo div #acalcular {font-size: 1.5rem; line-height: 2.3rem; visibility: hidden; color:#ECA400 ; }
+
+/* -------- area --------- */
+
+.botao {margin-top: 1rem; padding: 1rem; background-color:#000000 ; display: flex; flex-wrap: wrap; justify-content: space-between; height: 50vh;border-radius: 1rem; width: 400px;}
+
+
+@media (max-width: 400px){
+    .topo {width: 340px;}
+    .botao {width: 340px;padding: 0.5rem; height: 65vh;}
+}
+
+/* ---------- botoes */
+
+.botao button {width: 23%; margin: 0.4rem 0.2rem; cursor: pointer; border-radius: 15px; border:none; background-color: #F2E9E4; font-size: 2rem; opacity: 0.9; }
+.botao #reset {width: 48%; background-color: #460b0b ; color: white;}
+.botao #igual {width: 48%; background-color: #460b0b; color: white;}
+.botao #deleta {background-color: #460b0b ; color: white;}
+.botao button:hover {background-color: #460b0b; color: white; }
+
+.botao button:active {transform: translateY(2px); box-shadow: 0 3px #9A8C98; }
+
